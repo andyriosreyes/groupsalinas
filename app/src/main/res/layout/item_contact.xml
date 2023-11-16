@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyCardRecipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_2dp"
+    android:padding="@dimen/_10dp"
+    android:elevation="@dimen/_3dp"
+    android:layout_margin="@dimen/_10dp"
+    android:background="@drawable/rectangle_corner_white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/_2dp"
+        android:paddingStart="@dimen/_4dp"
+        android:paddingBottom="@dimen/_4dp"
+        android:paddingEnd="@dimen/_4dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgContact"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintDimensionRatio="1:1.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRecipeName"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_4dp"
+            tools:text="@string/app_name"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@+id/imgContact"
+            app:layout_constraintBottom_toBottomOf="@+id/imgContact"
+            app:layout_constraintStart_toEndOf="@+id/imgContact"
+            app:layout_constraintEnd_toStartOf="@+id/ivDelete"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:layout_marginEnd="@dimen/_4dp"
+            app:layout_constraintStart_toEndOf="@+id/tvRecipeName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgContact"
+            app:layout_constraintBottom_toBottomOf="@+id/imgContact"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

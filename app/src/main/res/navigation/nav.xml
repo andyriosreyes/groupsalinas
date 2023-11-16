@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/contactHomeFragment">
+
+    <fragment
+        android:id="@+id/contactHomeFragment"
+        android:name="com.andy.rios.elektra.ui.views.home.ContactHomeFragment"
+        android:label="fragment_contact_home"
+        tools:layout="@layout/fragment_contact_home" >
+        <action
+            android:id="@+id/action_contactHomeFragment_to_contactDetailFragment"
+            app:destination="@id/contactDetailFragment" />
+        <action
+            android:id="@+id/action_contactHomeFragment_to_contactRegisterFragment"
+            app:destination="@id/contactRegisterFragment"
+            app:popUpTo="@+id/fragment_contact_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/contactDetailFragment"
+        android:name="com.andy.rios.elektra.ui.views.detail.ContactDetailFragment"
+        android:label="fragment_contact_detail"
+        tools:layout="@layout/fragment_contact_detail" />
+    <fragment
+        android:id="@+id/contactRegisterFragment"
+        android:name="com.andy.rios.elektra.ui.views.register.ContactRegisterFragment"
+        android:label="fragment_contact_register"
+        tools:layout="@layout/fragment_contact_register" >
+        <argument
+            android:name="Contact"
+            app:argType="com.andy.rios.elektra.ui.model.Contact" />
+        <action
+            android:id="@+id/action_contactRegisterFragment_to_contactHomeFragment"
+            app:destination="@id/contactHomeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.views.register.ContactRegisterFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/register_contact" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/contentRegister"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="@dimen/_0dp"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_24dp"
+            android:paddingTop="@dimen/_24dp"
+            android:paddingEnd="@dimen/_24dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/_200dp"
+                android:src="@mipmap/ic_launcher"
+                app:strokeWidth="@dimen/_10dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:padding="@dimen/_5dp"
+                app:strokeColor="@color/primary"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:layout_height="@dimen/_200dp">
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_24dp"
+                android:textColor="@color/secondary"
+                android:text="@string/register_contact_id_title"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etRegisterContactId"
+                style="@style/EditText"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:hint="@string/register_contact_id"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textColor="@color/alternative"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/secondary"
+                android:layout_marginTop="@dimen/_24dp"
+                android:text="@string/register_contact_name_title"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etRegisterContactName"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:hint="@string/register_contact_name"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textColor="@color/alternative"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/_24dp"
+                android:textColor="@color/secondary"
+                android:layout_width="wrap_content"
+                android:text="@string/register_contact_ape_pat_title"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etRegisterContactApePat"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:hint="@string/register_contact_ape_pat"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textColor="@color/alternative"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/_24dp"
+                android:textColor="@color/secondary"
+                android:layout_width="wrap_content"
+                android:text="@string/register_contact_ape_mat_title"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etRegisterContactApeMat"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:hint="@string/register_contact_ape_mat"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textColor="@color/alternative"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/_24dp"
+                android:textColor="@color/secondary"
+                android:layout_width="wrap_content"
+                android:text="@string/register_contact_age_title"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etRegisterContactAge"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:hint="@string/register_contact_age"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/alternative"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/_24dp"
+                android:textColor="@color/secondary"
+                android:layout_width="wrap_content"
+                android:text="@string/register_contact_phone_title"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etRegisterContactPhone"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:hint="@string/register_contact_phone"
+                android:inputType="number"
+                android:maxLength="9"
+                android:textColor="@color/alternative"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/_24dp"
+                android:textColor="@color/secondary"
+                android:layout_width="wrap_content"
+                android:text="@string/register_contact_gender_title"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbGenderM"
+                    android:layout_width="wrap_content"
+                    android:text="@string/register_contact_gender_M"
+                    android:checked="true"
+                    android:layout_marginEnd="@dimen/_50dp"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbGenderF"
+                    android:layout_width="wrap_content"
+                    android:text="@string/register_contact_gender_F"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                style="@style/Button.SemiRounded"
+                android:text="Registrar"
+                android:layout_marginTop="@dimen/_18dp"
+                android:layout_marginBottom="@dimen/_24dp"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120dp"
+            android:background="@drawable/bg_gray_corner_radius_top">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/itemManAppGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"/>
+
+            <LinearLayout
+                android:id="@+id/contTakeImage"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="@dimen/_0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:clickable="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/itemManAppGuide"
+                tools:ignore="UseCompoundDrawables"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imgBsOneOption"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_height="@dimen/_45dp"
+                    android:src="@drawable/img_take_photo"
+                    tools:ignore="contentDescription"/>
+
+                <TextView
+                    android:id="@+id/tvBsOneOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:text="@string/image_take"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_2dp"
+                android:layout_height="@dimen/_0dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:orientation="vertical"
+                android:background="@color/primary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/itemManAppGuide"
+                app:layout_constraintEnd_toEndOf="@id/itemManAppGuide"
+                tools:ignore="UselessLeaf" />
+
+            <LinearLayout
+                android:id="@+id/contUploadFile"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="@dimen/_0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:clickable="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/itemManAppGuide"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="UseCompoundDrawables"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imgBsTwoOption"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_height="@dimen/_45dp"
+                    android:src="@drawable/img_galery"
+                    tools:ignore="contentDescription"/>
+
+                <TextView
+                    android:id="@+id/tvBsTwoOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:text="@string/image_upload"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

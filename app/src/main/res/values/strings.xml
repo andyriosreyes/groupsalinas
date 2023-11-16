@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Grupo Salinas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Second">Detalle</string>
+    <string name="empty_contact">No hay contactos</string>
+    <string name="register_contact_button">Registrar</string>
+    <string name="update_contact_button">Actualizar</string>
+    <string name="register_contact">Registro de contactos</string>
+    <string name="register_contact_name">Nombres del contacto</string>
+    <string name="register_contact_name_title">Nombres del contacto :</string>
+    <string name="register_contact_ape_pat">Apellido paterno del contacto</string>
+    <string name="register_contact_ape_pat_title">Apellido paterno del contacto :</string>
+    <string name="register_contact_ape_mat">Apellido materno del contacto</string>
+    <string name="register_contact_ape_mat_title">Apellido materno del contacto</string>
+    <string name="register_contact_age">Edad del contacto</string>
+    <string name="register_contact_age_title">Edad del contacto :</string>
+    <string name="register_contact_phone_title">Teléfono del contacto:</string>
+    <string name="register_contact_phone">Teléfono del contacto</string>
+    <string name="register_contact_gender_title">Sexo:</string>
+    <string name="register_contact_gender_M">Masculino</string>
+    <string name="register_contact_gender_F">Femenino</string>
+    <string name="register_contact_message_success">Se Registro correctamente</string>
+    <string name="edit_contact_message_success">Se Edito correctamente</string>
+    <string name="register_contact_message_fail">No se ha podido hacer el registro</string>
+    <string name="register_contact_id">Id del contacto</string>
+    <string name="register_contact_id_title">Id del contacto :</string>
+    <string name="image_upload">Galería</string>
+    <string name="image_take">Cámara</string>
+</resources>
